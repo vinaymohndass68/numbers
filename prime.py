@@ -18,7 +18,7 @@ def generate_primes(limit):
     return prime_numbers, len(prime_numbers)
 
 # Specify the upper limit for finding prime numbers
-limit = 100000  # You can change this value
+limit =  int(input("Enter the limit required: "))  # You can change this value
 prime_numbers, prime_count = generate_primes(limit)
 
 print(f"Prime numbers up to {limit} are:", prime_numbers)

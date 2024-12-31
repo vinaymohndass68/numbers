@@ -14,7 +14,7 @@ def find_narcissistic_numbers(limit):
     return narcissistic_numbers
 
 # Input the limit
-limit = 1000000  # You can adjust this limit
+limit = int(input("Enter the limit: "))  # You can adjust this limit
 narcissistic_numbers = find_narcissistic_numbers(limit)
 
 print(f"Narcissistic numbers up to {limit}: {narcissistic_numbers}")

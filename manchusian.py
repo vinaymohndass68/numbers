@@ -1,3 +1,4 @@
+# Munchausen numbers are formed when the sum of all the digits in the number are raised to the power of itself is equal to itself
 def munchausen_number(n):
     """Check if a number is a Münchhausen number."""
     digits = [int(digit) for digit in str(n)]
@@ -13,7 +14,7 @@ def find_munchausen_numbers(limit):
     return munchausen_numbers
 
 # Specify the limit
-upper_limit = 50000 # You can adjust this value
+upper_limit = int(input("Enter the highest limit: ")) # You can adjust this value
 munchausen_numbers = find_munchausen_numbers(upper_limit)
 
 print(f"Münchhausen numbers up to {upper_limit} are: {munchausen_numbers}")

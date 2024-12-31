@@ -19,7 +19,7 @@ def kaprekar_routine(n):
     return steps
 
 # Input a four-digit number
-input_number = 5876  # Example input
+input_number = int(input("Input a four digit number with atleast two different digits: "))  # Example input
 try:
     result = kaprekar_routine(input_number)
     print(f"Kaprekar routine steps for {input_number} to reach 6174 are: {result}")

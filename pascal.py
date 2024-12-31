@@ -15,7 +15,8 @@ def display_pascals_triangle(triangle):
         print(' '.join(map(str, row)).center(len(triangle[-1]) * 2))  # Center the rows for better display
 
 # Specify the number of rows
-num_rows = 100  # You can change this value
+
+num_rows = int(input("Enter the number of limit: "))  # You can change this value
 pascals_triangle = generate_pascals_triangle(num_rows)
 
 print("Pascal's Triangle:")

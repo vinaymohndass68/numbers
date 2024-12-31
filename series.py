@@ -13,5 +13,6 @@ def find_valid_pairs(d):
     return results
 
 # Example usage for 2-digit 'b'
-valid_pairs = find_valid_pairs(3)
+req_number = int(input("Enter the number of digits to find: "))
+valid_pairs = find_valid_pairs(req_number)
 print(valid_pairs)

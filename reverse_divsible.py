@@ -13,8 +13,8 @@ def find_reverse_divisible_numbers(limit, divisor):
     return reverse_divisible_numbers
 
 # Specify the limit and divisor
-upper_limit = 1000  # You can adjust this value
-divisor = 7         # You can change the divisor as needed
+upper_limit = int(input("Enter the upper limit: ")) # You can adjust this value
+divisor = int(input("Enter the divisor: "))         # You can change the divisor as needed
 
 reverse_divisible_numbers = find_reverse_divisible_numbers(upper_limit, divisor)
 print(f"Reverse-divisible numbers up to {upper_limit} that are divisible by {divisor} are: {reverse_divisible_numbers}")
