@@ -34,7 +34,7 @@ def find_cyclic_numbers(limit):
     return cyclic_numbers
 
 # Set a limit to search for cyclic numbers (example: limit 2000000)
-limit = 200000
+limit = int(input("Enter the limit: "))
 cyclic_numbers = find_cyclic_numbers(limit)
 
 print(f"Cyclic numbers up to {limit}: {cyclic_numbers}")
