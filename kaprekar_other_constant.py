@@ -16,6 +16,6 @@ def kaprekar_routine_495(n):
     return steps
 
 # Input a three-digit number
-input_number = 578  # Example input
+input_number = int(input("Enter a three digit number: "))  # Example input
 result = kaprekar_routine_495(input_number)
 print(f"Kaprekar routine steps for {input_number} to reach 495 are: {result}")

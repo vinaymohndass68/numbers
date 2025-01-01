@@ -9,7 +9,7 @@ def fibonacci(n):
     return fib_sequence
 
 # Specify the number of Fibonacci numbers to generate
-n = 100  # You can change this value
+n = int(input("Enter the limit : "))  # You can change this value
 fib_numbers = fibonacci(n)
 
 print(f"The first {n} Fibonacci numbers are:", fib_numbers)

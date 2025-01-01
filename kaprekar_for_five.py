@@ -21,7 +21,7 @@ def kaprekar_routine_5_digit(n):
     return steps
 
 # Input a five-digit number
-input_number = 87421  # Example input
+input_number = int(input("Enter a five digit number:" ))  # Example input
 result = kaprekar_routine_5_digit(input_number)
 
 print(f"Kaprekar routine steps for {input_number} are: {result}")

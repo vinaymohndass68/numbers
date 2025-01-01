@@ -1,3 +1,9 @@
+'''
+A Happy Number is a number that eventually reaches 1 when you repeatedly replace the number by the sum of the squares of its digits.
+
+If the process results in an infinite loop of numbers that do not include 1, the number is called an Unhappy or Sad Number.
+'''
+
 def is_happy_number(n):
     """Determine if a number is a happy number."""
     def sum_of_squares_of_digits(num):
@@ -20,7 +26,7 @@ def find_happy_numbers(limit):
     return happy_numbers, len(happy_numbers)
 
 # Input the limit
-limit = 100  # You can adjust this limit
+limit = int(input("Enter the limit: "))  # You can adjust this limit
 happy_numbers, count = find_happy_numbers(limit)
 
 print(f"Happy numbers up to {limit}: {happy_numbers}")

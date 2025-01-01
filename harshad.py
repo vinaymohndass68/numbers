@@ -1,3 +1,8 @@
+'''
+A Harshad Number (also known as a Niven number) is a number that is divisible by the sum of its digits. In other words, a number 
+N is a Harshad number if the sum of its digits divides N evenly.
+'''
+
 def is_harshad(n):
     # Calculate the sum of the digits of n
     digit_sum = sum(int(digit) for digit in str(n))
@@ -13,7 +18,7 @@ def find_harshad_numbers(limit):
     return harshad_numbers
 
 # Specify the range you want to search for Harshad numbers
-limit = 1000  # You can change this limit
+limit = int(input("Enter the limit: "))  # You can change this limit
 harshad_numbers = find_harshad_numbers(limit)
 
 print("Harshad numbers up to", limit, "are:", harshad_numbers)
