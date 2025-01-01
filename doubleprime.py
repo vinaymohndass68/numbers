@@ -19,14 +19,18 @@ def double_prime_numbers(limit):
     """Find all double prime numbers up to a specified limit."""
     double_primes = []
     for n in range(2, limit + 1):
-        prime_count = count_primes_up_to(n)
-        if is_prime(prime_count):
-            double_primes.append(n)
-    
+        # Only check for prime numbers (N itself must be prime)
+        if is_prime(n):
+            prime_count = count_primes_up_to(n)
+            # Check if the count of primes is also prime
+            if is_prime(prime_count):
+                double_primes.append(n)
+
     return double_primes
 
 # Specify the upper limit
-upper_limit = 18  # You can change this value
+print("Double prime numbers satisfy two criteria, firstly it should be a prime number and next the total number of prime numbers until the number is also a prime")
+upper_limit = int(input("Enter the upper limit: "))  # You can change this value
 double_primes = double_prime_numbers(upper_limit)
 
 print(f"Double prime numbers up to {upper_limit} are:", double_primes)
